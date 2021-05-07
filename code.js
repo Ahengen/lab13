@@ -14,7 +14,7 @@ function createStudent(event) {
         percentage: this.pointsEarned / this.pointsPossible,
 
         getDisplayPercentage: function () {
-            let percent = Math.round(this.pointsEarned / this.pointsPossible);
+            let percent = Math.round((100) *(this.pointsEarned / this.pointsPossible));
             return `${this.pointsEarned} / ${this.pointsPossible} (${percent}%)`;
         },
 
